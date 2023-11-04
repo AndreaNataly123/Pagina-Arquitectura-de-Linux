@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog sobre Arquitecturas de Linux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arquitecturas de Linux</h1>
+    </header>
+
+    <div class="container">
+        <article>
+            <h2>Arquitectura Monolítica</h2>
+            <p>
+                La arquitectura monolítica es uno de los enfoques más antiguos utilizados por los sistemas operativos Linux. En esta arquitectura, todos los componentes fundamentales del sistema operativo se ejecutan en el espacio de kernel como un único proceso grande y con plena potencia de ejecución.
+            </p>
+        </article>
+
+        <article>
+            <h2>Arquitectura Microkernel</h2>
+            <p>
+                A diferencia de la monolítica, la arquitectura microkernel trata de minimizar las funciones que se ejecutan en el espacio de kernel. Esto significa que solo los servicios esenciales se ejecutan en el kernel y el resto se ejecutan en el espacio de usuario.
+            </p>
+        </article>
+
+        <article>
+            <h2>Arquitectura Modular</h2>
+            <p>
+                Linux adopta una arquitectura modular. Esto permite que el kernel tenga un núcleo central, pero otras funcionalidades pueden ser cargadas o descargadas en forma de módulos cuando sea necesario.
+            </p>
+        </article>
+        
+        <!-- Artículo sobre El Espacio de Usuario y Kernel -->
+        <article>
+            <h2>El Espacio de Usuario y Kernel</h2>
+            <p>
+                En el diseño de Linux, el espacio de usuario y el espacio de kernel están claramente separados. El espacio de kernel es donde el código tiene acceso irrestricto al hardware y se ejecuta con los mayores privilegios. En contraste, el espacio de usuario es donde se ejecutan las aplicaciones de los usuarios, aisladas del hardware directo y con menos privilegios. Esta separación ayuda a proteger la integridad del sistema operativo y mejora la seguridad.
+            </p>
+        </article>
+
+        <!-- Artículo sobre Sistema de Archivos de Linux -->
+        <article>
+            <h2>Sistema de Archivos de Linux</h2>
+            <p>
+                El sistema de archivos de Linux es una estructura jerárquica donde todos los archivos y directorios están dispuestos. Desde el punto de vista de la arquitectura, lo que destaca en Linux es su capacidad para soportar múltiples sistemas de archivos, permitiendo a los usuarios elegir el que mejor se adapte a sus necesidades. Además, Linux presenta un sistema de archivos virtual que abstrae la funcionalidad del sistema de archivos físico y proporciona un conjunto estándar de APIs para interactuar con ellos.
+            </p>
+        </article>
+
+        <!-- Aquí podrías añadir más artículos sobre diferentes arquitecturas o características de Linux -->
+    </div>
+    <footer>
+        <p>Blog de Arquitecturas de Linux © 2023</p>
+    </footer>
+</body>
+</html>
